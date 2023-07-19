@@ -14,3 +14,8 @@ function My_First_Function() {                          //naming the function
     var str = "this is my button testing text!"         //naming the variable
     document.getElementById("Button").innerHTML = str   //changing the value of HTML button string by it's ID
 }
+
+function My_Second_Function() {
+    var textChange = "It worked!"
+    document.getElementById("button_2").innerHTML = textChange
+}
