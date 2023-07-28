@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang=en>
+
+<head>
+    <title>JAVASCRIPT testing</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="">
+</head>
+
+<body>
+
+    <p id="hello"></p>
+    <p id="demo"></p>
+
+    <script>
+        let hello = "";
+        hello = () => "Hello World!";
+        document.getElementById("hello").innerHTML = hello();
+
+
+        const numbers = [45, 4, 9, 16, 25];
+        let someOver18 = numbers.some(myFunction);
+
+        document.getElementById("demo").innerHTML = "Index over 3 is " + someOver18;
+
+        function myFunction(value, index, array) {
+            return index > 3;
+        }
+    </script>
+
+
+</body>
+
+
+</html>

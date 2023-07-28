@@ -30,7 +30,7 @@ div {
     text-align: left;
     vertical-align: top;
     margin-top: 20px;
-    text-align: center;
+    text-align: left;
 
 }
 
@@ -45,7 +45,8 @@ div {
     width: 32%;
     height: 200px;
     display: inline-block;
-    vertical-align: top;
+    vertical-align: top;    
+
     
 }
 
@@ -54,6 +55,8 @@ div {
     height: 200px;
     display: inline-block;
     vertical-align: top;
+  
+
 
 }
 
@@ -62,6 +65,8 @@ div {
     height: 200px;
     display: inline-block;
     vertical-align: top;
+  
+
 
 }
 #showText {
