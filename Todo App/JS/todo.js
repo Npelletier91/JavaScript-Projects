@@ -33,7 +33,7 @@ function show() {
     html += '</ul>';
     document.getElementById('todos').innerHTML = html;
 
-    // Add click event listener to each 'x' button
+    // Adding click event listener to each 'x' button
     var removeButtons = document.getElementsByClassName("remove");
     for (var i = 0; i < removeButtons.length; i++) {
         removeButtons[i].addEventListener("click", function (event) {
@@ -50,6 +50,13 @@ function get_todos() {
         todos = JSON.parse(todos_str);
     }
     return todos;
+}
+
+function remove(index) {
+    var todos = get_todos();
+    todos.splice(index, 1);
+    localStorage.setItem("todo", JSON.stringify(todos));
+    show();
 }
 document.getElementById('add').addEventListener('click', add);
 show();
